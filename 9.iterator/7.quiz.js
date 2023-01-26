@@ -1,0 +1,27 @@
+// Quiz
+/* const prop = {
+  name: 'Button',
+  styles: {
+    size: 20,
+    color: 'black',
+  },
+};
+
+function changeColor(인자만들어보세요) {
+  console.log(color);
+}
+changeColor(prop);
+*/
+
+const prop = {
+  name: 'Button',
+  styles: {
+    size: 20,
+    color: 'black',
+  },
+};
+
+function changeColor({ styles: { color } }) {
+  console.log(color);
+}
+changeColor(prop);
